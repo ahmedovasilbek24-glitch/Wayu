@@ -1,6 +1,7 @@
 import {BaseModel} from "../../core/base-model";
-import {Column} from "typeorm";
+import {Column, Entity} from "typeorm";
 
+@Entity('static-info')
 export class StaticInfoEntity extends BaseModel {
     @Column({ type: "varchar", length: 128 })
     appStoreLink?: string;

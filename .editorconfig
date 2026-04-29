@@ -1,0 +1,3 @@
+[*.{js,ts}]
+max_line_length = 168
+indent_size = 2
