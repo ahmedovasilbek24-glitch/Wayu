@@ -1,8 +1,8 @@
 import { Column, Entity, ManyToMany, JoinTable, OneToMany } from 'typeorm';
 import { BaseModel } from '@/core/base-model';
 import type {Relation} from "typeorm";
-import {Tags} from "@/features/common/tags.entity";
-import {FaqsTagsEntity} from "@/migrations/faqsTags.entity";
+import {Tags} from "@/features/common/tags/tags.entity";
+import {FaqsTagsEntity} from "@/features/common/tags/faqsTags.entity";
 
 @Entity('faqs')
 export class FaqsEntity extends BaseModel {

@@ -1,6 +1,6 @@
 import {BaseModel} from "@/core/base-model";
 import {Column, Entity, ManyToOne} from "typeorm";
-import {CountriesEntity} from "../common/countries.entity";
+import {CountriesEntity} from "../common/counties/countries.entity";
 import type{Relation} from "typeorm";
 
 @Entity('branches')

@@ -1,8 +1,8 @@
 import {Column, Entity, ManyToMany, ManyToOne, OneToMany} from "typeorm";
 import {BaseModel} from "@/core/base-model";
 import type {Relation} from "typeorm";
-import {CountriesEntity} from "@/features/common/countries.entity";
-import {Tags} from "@/features/common/tags.entity";
+import {CountriesEntity} from "@/features/common/counties/countries.entity";
+import {Tags} from "@/features/common/tags/tags.entity";
 import {NewsTagsEntity} from "@/features/news/news-tags/newsTags.entity";
 import {NewsCategoriesEntity} from "@/features/news/news-categories/newsCategories.entity";
 

@@ -7,16 +7,24 @@ import {CreateNewsHandler} from "@/features/news/news/commonds/create-news.commo
 import {NewsController} from "@/features/news/news/news.controller";
 import {DeleteNewsCategoryHandler} from "@/features/news/news-categories/commonds/delete-news-category/delete-news-category.handler";
 import {GetOneNewsCategoryHandler} from "@/features/news/news-categories/query/get-one-news-category/get-one-news-category.handler";
+import {DeleteNewsHandle} from "@/features/news/news/commonds/delete-news/delete-news.handle";
+import {UpdateNewsCategoryHandler} from "@/features/news/news-categories/commonds/update-news-category/update-news-category.handler";
+import {UpdateNewsHandler} from "@/features/news/news/commonds/update-news/update-news.handler";
+import {GetOneNewsHandler} from "@/features/news/news/query/get-one-news/get-one-news.handler";
 
 @Module({
   controllers: [NewsCategoryController, NewsController],
   providers: [
     GetAllNewsCategoryHandler,
-    CreateNewsCategoryHandler,
-    DeleteNewsCategoryHandler,
-    GetOneNewsCategoryHandler,
     GetAllNewsHandler,
-    CreateNewsHandler
+    CreateNewsCategoryHandler,
+    CreateNewsHandler,
+    DeleteNewsCategoryHandler,
+    DeleteNewsHandle,
+    GetOneNewsCategoryHandler,
+    GetOneNewsHandler,
+    UpdateNewsCategoryHandler,
+    UpdateNewsHandler
   ],
 })
 
