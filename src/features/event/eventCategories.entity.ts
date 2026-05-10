@@ -1,8 +1,0 @@
-import {BaseModel} from "@/core/base-model";
-import {Column, Entity} from "typeorm";
-
-@Entity('event-category')
-export class EventCategoriesEntity extends BaseModel {
-    @Column({type: "varchar", length: 64, unique: true})
-    title!: string
-}

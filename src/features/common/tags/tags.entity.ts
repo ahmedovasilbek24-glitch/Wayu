@@ -2,8 +2,8 @@ import { Column, Entity, ManyToMany, OneToMany } from 'typeorm'
 import {BaseModel} from "@/core/base-model"
 import type {Relation} from "typeorm";
 import {NewsEntity} from "@/features/news/news/news.entity";
-import {FaqsEntity} from "@/features/support/faqs.entity";
-import {FaqsTagsEntity} from "@/features/common/tags/faqsTags.entity";
+import {FaqsEntity} from "@/features/support/faqs/faqs.entity";
+import {FaqsTagsEntity} from "@/features/support/faqs-tags/faqsTags.entity";
 import {NewsTagsEntity} from "@/features/news/news-tags/newsTags.entity";
 
 @Entity('tags')

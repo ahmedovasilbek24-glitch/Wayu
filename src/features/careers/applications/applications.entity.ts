@@ -16,7 +16,7 @@ export class ApplicationsEntity extends BaseModel {
     email!: string;
 
     @Column()
-    vacancyId!: string;
+    vacancyId!: number;
 
     @ManyToOne(() => VacanciesEntity, (vacancy) => vacancy.id)
     vacancy!: Relation<VacanciesEntity>;
